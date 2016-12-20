@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/zhangb_ll"
+        android:visibility="gone">
+    </LinearLayout>
+    <TextView 
+            android:id="@+id/addZB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/zhangb4"
+            android:textSize="10sp"
+            android:paddingTop="7dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/write"
+            android:background="@drawable/zhangb"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </ScrollView>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/rilitv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|bottom"
+            android:background="@drawable/rii" />
+
+        <LinearLayout 
+            android:id="@+id/ll_zb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_shape">
+           <TextView
+            android:id="@+id/tv_zhangb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shengyizhangben" />
+           <ImageView 
+               android:id="@+id/spup"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/sppiner1"/>
+        </LinearLayout>
+        <View 
+            android:id="@+id/view"
+            android:layout_width="0.5dp"
+            android:layout_height="25dp"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ll_zb"/>
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/view"
+            android:textColor="@color/write"
+            android:background="@drawable/month_shape"
+            android:text="@string/yue" />
+        <View 
+            android:id="@+id/view1"
+            android:layout_width="0.5dp"
+            android:layout_height="25dp"
+            android:background="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_month"/>
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/view1"
+            android:textColor="@color/write"
+            android:background="@drawable/day_shape" />
+
+        <TextView
+            android:id="@+id/month_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_month"
+            android:layout_marginRight="40dp"
+            android:layout_alignBaseline="@+id/tv_month"/>
+
+        <TextView
+            android:id="@+id/month_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_month"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/tv_month"/>
+
+        <TextView
+            android:id="@+id/day_zc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_day"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_day"
+            android:text="支出" />
+
+        <TextView
+            android:id="@+id/day_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_day"
+            android:layout_toLeftOf="@+id/tv_day"
+            android:layout_marginRight="5dp"
+            android:text="收入" />
+
+    </RelativeLayout>
+         <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="#000000"
+        android:dividerHeight="0dp"
+        android:id="@+id/lv">
+        
+    </ListView>  
+   
+   
+</LinearLayout>

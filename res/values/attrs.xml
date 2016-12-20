@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- declare-styleable用于对自定义控件添加自定义属性 -->
+    <declare-styleable name="item_TixingFragment">
+        <attr name="text" format="string"></attr>
+        <attr name="src" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="item_QianbaoFragment">
+        <attr name="firsttext" format="string"></attr>
+        <attr name="secondtext" format="string"></attr>
+        <attr name="qianbaosrc" format="reference"></attr>
+        <attr name="backgroud" format="color"></attr>
+    </declare-styleable>
+
+</resources>

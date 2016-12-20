@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:briup="http://schemas.android.com/apk/res/com.wzm.licai.ui"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#ffffff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="财务提醒"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/tixing_iv"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/touxiang" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <com.wzm.licai.item.TixingFragmentItem
+                android:id="@+id/xinyongka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                briup:src="@drawable/xinyongka2"
+                briup:text="信用卡到期" />
+
+            <com.wzm.licai.item.TixingFragmentItem
+                android:id="@+id/fangzu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                briup:src="@drawable/fangzu"
+                briup:text="房租到期" />
+
+            <com.wzm.licai.item.TixingFragmentItem
+                android:id="@+id/jizhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                briup:src="@drawable/jizhang"
+                briup:text="记账提醒" />
+            <RelativeLayout
+                android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/tianjia1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:text="添加提醒"/>
+              
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#B2B2A8" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

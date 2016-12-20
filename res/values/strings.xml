@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">家庭理财通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">家庭理财通</string>
+    <string name="biaoti">理清财富   轻松生活</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_shou_ru">ShouRuActivity</string>
+    <string name="title_activity_zhi_chu">ZhiChuActivity</string>
+    <string name="zhanghao">账号:</string>
+    <string name="mima">密码:</string>
+    <string name="zhuce">注册</string>
+    <string name="denglu">登录</string>
+    <string name="quxiao">取消</string>
+    <string name="shengyizhangben">生意账本</string>
+    <string name="yue">10月</string>
+    <string name="zhangb1">默认账本</string>
+    <string name="zhangb2">旅游账本</string>
+    <string name="zhangb3">生意账本</string>
+    <string name="zhangb4">新增账本</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_nao_zhong">NaoZhongActivity</string>
+
+</resources>

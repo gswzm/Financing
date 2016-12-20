@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zhanghao">账号:</string>
+    <string name="mima">密码:</string>
+    <string name="zhuce">注册</string>
+    <string name="denglu">登录</string>
+    <string name="quxiao">取消</string>
+     
+</resources>
